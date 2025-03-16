@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Background color set to white */
+        }
+        header {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            background: #fff;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+            justify-content: center; /* Center the logo */
+        }
+        header img {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
+            transform: scale(1.4) translateY(-10px);
+            margin-left: 10px;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .highlight {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6600;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff6600;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+        }
+        footer {
+            background: #f5f5f5;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: left;
+            position: relative; /* Allows the absolute positioning inside footer */
+        }
+        .footer-section {
+            display: inline-block;
+            text-align: left;
+        }
+        .footer-section h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .footer-section p, .footer-section a {
+            font-size: 16px;
+            color: #666;
+            text-decoration: none;
+            line-height: 1.6;
+        }
+        video {
+            display: block;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .description-section {
+            display: flex;
+            align-items: center;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            gap: 20px;
+        }
+        .description-section img {
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto; /* Center-align the image */
+        }
+        .description-text {
+            flex: 1;
+        }
+        .description-text h2 {
+            font-size: 22px;
+            color: #ff6600;
+        }
+        .description-text p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Footer Contact Container */
+        .contact-container {
+            text-align: center;
+            background: #f5f5f5;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        /* Make the email and instagram links appear like buttons */
+        .contact-links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-links a:hover {
+            background-color: #e65c00;
+        }
+
+        /* Change the separator "or" color to match email link color */
+        .separator {
+            color: #666; /* Match the color of email and instagram links */
+            margin: 0 10px;
+        }
+
+        /* Change order for the "Did You Know" section */
+        .description-section-reversed {
+            flex-direction: row-reverse;
+        }
+
+        /* New class to position the trademark text in the bottom-right corner */
+        .trademark {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Centered logo -->
+        <img src="images/logo.png" alt="TOOMUCH_HR Logo">
+    </header>
+
+    <section class="welcome-description">
+        <h2 class="highlight">Welcome to TMHR</h2>
+        <p>We are here to guide you through your career journey. Whether you are a student, a fresh graduate, or a professional looking to upskill, TMHR provides the right resources and mentorship.</p>
+        <p>Our goal is to help you gain confidence, improve your communication, and develop the essential skills needed to excel in your career.</p>
+        
+        <!-- Added image after Welcome to TMHR section -->
+        <img src="images/image4.jpg" alt="Career Journey">
+    </section>
+
+    <section class="simple-description">
+        <h2 class="highlight">We've Got You Covered!</h2>
+        <p>Whether you’re a student or a corporate professional, we’re here to guide you. From soft skills training to job placements, we have everything to help you grow!</p>
+        <p>Our platform provides resources on confidence building, resume tips, interview strategies, and much more to boost your career readiness.</p>
+    </section>
+
+    <!-- Moved the video after the "We've Got You Covered!" section -->
+    <video controls autoplay muted loop>
+        <source src="images/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <section class="description-section description-section-reversed">
+        <img src="images/image1.jpg" alt="Fun Fact About Interviews">
+        <div class="description-text">
+            <h2>Did You Know This Fun Fact?</h2>
+            <p>Successful interviews depend on engaging in healthy conversations with effective communication skills.</p>
+            <p>Mastering public speaking and presentation skills can give you the confidence to express yourself clearly in any interview.</p>
+        </div>
+    </section>
+
+    <section class="description-section">
+        <div class="description-text">
+            <h2>Enhance Your Skills</h2>
+            <p>Skills open doors to new opportunities. Keep learning, growing, and adapting to stay ahead.</p>
+        </div>
+        <img src="images/image2.jpg" alt="Being Skillful is the New Talent">
+    </section>
+
+    <section class="description-section">
+        <div class="description-text">
+            <h2>Essential 5 Interview C’s</h2>
+            <p>Master the five key elements of a successful interview: Communication, Confidence, Competence, Concise Responses, and Cogency.</p>
+            <p>These core skills help you express yourself clearly, build trust, and leave a lasting impression.</p>
+        </div>
+        <img src="images/image3.jpg" alt="Essential 5 Interview C’s">
+    </section>
+
+    <footer>
+        <div class="footer-section contact-container">
+            <h3>Get in Touch</h3>
+            <p>If you have any questions or need assistance, feel free to reach out!</p>
+            <div class="contact-details">
+                <div class="contact-links">
+                    <a href="https://www.instagram.com/toomuch_hr" target="_blank" class="instagram-link">
+                        Follow us on Instagram
+                    </a>
+                    <span class="separator">or</span>
+                    <a href="mailto:toomuchhr9@gmail.com" class="email-link">Email Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Added footer text and positioned it at the bottom-right corner -->
+        <div class="footer-section trademark">
+            <p>&copy; 2025 TOOMUCH_HR™. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showAlert() {
+            alert("Hello! How can we assist you in your job search?");
+        }
+    </script>
+</body>
+</html>
